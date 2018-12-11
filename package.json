@@ -1,0 +1,26 @@
+{
+  "name": "cyptozombies",
+  "version": "1.0.0",
+  "description": "this is a decentralized app built from the loom game at (http://cryptozombies.io/)",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://Sach92@bitbucket.org/Sach92/crypto-zombie-game.git"
+  },
+  "keywords": [
+    "dapp",
+    "blockchain"
+  ],
+  "author": "Kuziwa Sachikonye",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/Sach92/crypto-zombie-game#readme",
+  "dependencies": {
+    "lite-server": "^2.4.0"
+  }
+}
