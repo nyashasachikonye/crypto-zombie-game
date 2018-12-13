@@ -1,47 +1,23 @@
-// contracts arranged according to dependancies
 
 //independent
-
+//dont deploy these
 var ERC721 = artifacts.require("./ERC721.sol"); //deployer problems // dont deploy an interface
 var SafeMath = artifacts.require("./SafeMath.sol");
-
-//dependent contracts
 var Ownable = artifacts.require("./Ownable.sol"); //deployer problems
+
+
+// //dependent contracts
 var ZombieFactory = artifacts.require("./ZombieFactory.sol");
 var ZombieFeeding = artifacts.require("./ZombieFeeding.sol");
 var ZombieHelper = artifacts.require("./ZombieHelper.sol");
-var ZombieAttack = artifacts.require("./ZombieAttack.sol"); //deployer problems
-var ZombieOwnership = artifacts.require("./ZombieOwnership.sol"); //deployer problems
+var ZombieAttack = artifacts.require("./ZombieAttack.sol");
+var ZombieOwnership = artifacts.require("./ZombieOwnership.sol");
 
-// module.exports = function(deployer) {
-//   deployer.deploy(ERC721).then(function() {
-//     return deployer.deploy(SafeMath);
-//   }).then(function(){
-//     return deployer.deploy(Ownable);
-//   }).then(function(){
-//     return deployer.deploy(ZombieFactory);
-//   }).then(function(){
-//     return deployer.deploy(ZombieFeeding);
-//   }).then(function(){
-//     return deployer.deploy(ZombieHelper);
-//   }).then(function(){
-//     return deployer.deploy(ZombieAttack);
-//   }).then(function(){
-//     return deployer.deploy(ZombieOwnership);
-//   });
-// };
-
-// module.exports = function(deployer) {
-//   deployer.deploy(SafeMath).then(function() {
-//     return deployer.deploy(ZombieFactory);
-//   }).then(function(){
-//     return deployer.deploy(ZombieFeeding);
-//   }).then(function(){
-//     return deployer.deploy(ZombieHelper);
-//   });
-// };
-
-
+//deployments
 module.exports = function(deployer) {
-  deployer.deploy(ERC721);
+  deployer.deploy(ZombieFactory);
+  deployer.deploy(ZombieFeeding);
+  deployer.deploy(ZombieHelper);
+  deployer.deploy(ZombieAttack);
+  deployer.deploy(ZombieOwnership);
 };
