@@ -7,7 +7,8 @@
     "test": "test"
   },
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "dev": "lite-server"
   },
   "repository": {
     "type": "git",
