@@ -26,7 +26,7 @@ it('facilitates the creation of a random zombie', function(){
   }).then(function(receipt){
     assert.equal(receipt.logs.length, 1, 'triggers one event');
     assert.equal(receipt.logs[0].event, 'NewZombie', 'should be the "NewZombie" event');
-    assert.equal(receipt.logs[0].args.zombieId.toNumber(), '0', 'zombieId should be 1');
+    assert.equal(receipt.logs[0].args.zombieId.toNumber(), '0', 'zombieId should be 0');
     assert.equal(receipt.logs[0].args.name, 'Genesis', 'name should be Genesis');
     return factoryInstance.zombies(0);
 // 2.c. ensure zombie added to zombie array with the correct values [v]

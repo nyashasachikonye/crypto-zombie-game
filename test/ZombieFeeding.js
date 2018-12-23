@@ -21,11 +21,3 @@ contract('ZombieFeeding', function(accounts){
 //set a kitty contract address (also tests onlyOwner?)
 // get Zombie to feed on a kitty
 // create a new kitty zombie
-
-//Zombie Helper
-// ensure levelUp fee adjustable
-// level up a zombie
-// change a zombies name
-//change a zombies DNA
-// print/list a addresses zombies army
-//withdraw funds in the contract
